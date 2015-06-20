@@ -16,7 +16,7 @@
     "textbox"
   ],
   "license": "MIT",
-  "homepage": "http://blog.jstassen.com",
+  "homepage": "https://github.com/TheBox193/jquery.otherdropdown",
   "ignore": [
     "**/.*",
     "node_modules",
