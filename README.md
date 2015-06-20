@@ -1,7 +1,8 @@
 # jquery.otherdropdown
 A dropdown select box where choosing 'other' prompts the user for an alternate response.
 
-[Examples / Docs](http://jstassen.com)
+* [Examples / Docs](http://otherdropdown.code.jstassen.com/)
+* [Github](https://github.com/TheBox193/jquery.otherdropdown)
 
 ## Install
 * Follow the instructions to install [Bower](http://bower.io/#install-bower).

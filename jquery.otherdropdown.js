@@ -1,9 +1,9 @@
 /**
  * @name jquery.otherdropdown
  * @description A small jQuery plugin to support a text area when selecting an 'Other' option in a dropdown
- * @version 1.0.0
+ * @version 1.0.1
  * @author Jonathan Stassen <jstassen.com>
- * @see https://github.com/TheBox193/Other-Option
+ * @see https://github.com/TheBox193/jquery.otherdropdown
  */
 $.fn.otherDropdown = function(options) {
 	var $this = this;
