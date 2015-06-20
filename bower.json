@@ -5,7 +5,7 @@
     "TheBox193 <godlvall2jm@gmail.com>"
   ],
   "description": "A dropdown select box where choosing 'other' prompts the user for an alternate response.",
-  "main": "jquery.otheroption.js",
+  "main": "jquery.otherdropdown.js",
   "keywords": [
     "other",
     "select",
