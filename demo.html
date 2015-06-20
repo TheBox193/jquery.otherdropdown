@@ -1,0 +1,128 @@
+<html><head>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="jquery.otheroption.js"></script>
+	<script type="text/javascript">
+
+	$(function(){
+		// Binding the otherDropdowns listeners to our form
+		$('[name="Test-1"]').otherDropdown();
+		$('[name="Test-2"]').otherDropdown({value:'Something'});
+		$('[name="Test-3"]').otherDropdown({classes:'noborder'});
+		$('[name="Test-4"]').otherDropdown({placeholder:'Type your reason'});
+	}); 
+
+	</script>
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+	top: 18px !important;
+	left: 50% !important;
+	margin-left: -100px !important;
+	width: 200px !important;
+	border: 2px rgba(255,255,255,.38) solid !important;
+	border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+	margin-left: 0px !important;
+}
+</style></head>
+<body>
+<title>jquery.otherdropdown  v1.0.0</title>
+
+<xmp theme="united" style="display:none;">
+# jquery.otherdropdown
+A dropdown select box where choosing 'other' prompts the user for an alternate response.
+
+[Examples / Docs](http://jstassen.com)
+
+## Install
+* Follow the instructions to install [Bower](http://bower.io/#install-bower).
+* Switch to project folder and run `bower install jquery.otherdropdown --save`
+* Include `jquery.otherdropdown.js` after jQuery is loaded in your document.
+
+## Usage
+* Bind jquery.otherdropdown to an html select, optionally pass an `options` object
+* `$('select').otherdropdown()`
+* `$('.mySelect').otherdropdown({placeholder:'Type your answer'})`
+
+## Options
+You can pass in options to otherdropdown as an object.
+
+* `{value: 'more'}` - Optional, Value you wish to trigger the text input. `default = 'other'`
+* `{classes: 'noborder greybg'}` - Optional, clases that the text input should have. `default = null`
+* `{placeholder: 'Type your answer'}` - Optional, placeholder text on text input. `default = name`
+
+## Future
+* Add Callbacks hooks
+* Create `min` builds
+* Add tests
+
+## Demos
+</xmp>
+
+<div class="container">
+		<form id="quoteLong" action="FromOtherReplace.php" name="eval_edit" method="post" format="html">
+				<div class="row">
+					<p>
+					</p>
+				</div>
+				<div class="row">
+					<code>$('[name="Test-1"]').otherDropdown();</code>
+				</div>
+				<div class="row">
+					<select name="Test-1">
+						<option value="">Select One</option>
+						<option value="No employees">No employees</option>
+						<option value="1-2 employees">1-2 employees</option>
+						<option value="Other">Other</option>
+					</select>
+				</div>
+				<div class="row">
+					<code>$('[name="Test-2"]').otherDropdown({value:'Something'});</code>
+				</div>
+				<div class="row">
+					<select name="Test-2">
+						<option value="">Select One</option>
+						<option value="No employees">No employees</option>
+						<option value="1-2 employees">1-2 employees</option>
+						<option value="Something">Something Else</option>
+					</select>
+				</div>
+				<div class="row">
+					<code>$('[name="Test-3"]').otherDropdown({classes:'noborder'});</code>
+				</div>
+
+				<div class="row">
+					<select name="Test-3">
+						<option value="">Select One</option>
+						<option value="No employees">No employees</option>
+						<option value="1-2 employees">1-2 employees</option>
+						<option value="Other">Other</option>
+					</select>
+				</div>
+
+				<div class="row">
+					<code>$('[name="Test-4"]').otherDropdown({placeholder:'Type your reason'});</code>
+				</div>
+				<div class="row">
+					<select name="Test-4">
+						<option value="">Select One</option>
+						<option value="No employees">No employees</option>
+						<option value="1-2 employees">1-2 employees</option>
+						<option value="Other">Other</option>
+					</select>
+				</div>
+<!-- 				<div class="row">
+					<input class="submit" type="submit" value="Submit">
+				</div> -->
+<!-- 				<div class="row">
+<pre>Array
+(
+)
+</pre>
+				</div> -->
+			</form>
+	</div>
+	
+<script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
+</body></html>

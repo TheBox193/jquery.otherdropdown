@@ -1,0 +1,30 @@
+{
+  "name": "jquery.otherdropdown",
+  "version": "1.0.0",
+  "authors": [
+    "TheBox193 <godlvall2jm@gmail.com>"
+  ],
+  "description": "A dropdown select box where choosing 'other' prompts the user for an alternate response.",
+  "main": "jquery.otheroption.js",
+  "keywords": [
+    "other",
+    "select",
+    "dropdown",
+    "text",
+    "input",
+    "option",
+    "textbox"
+  ],
+  "license": "MIT",
+  "homepage": "http://blog.jstassen.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.*"
+  }
+}
