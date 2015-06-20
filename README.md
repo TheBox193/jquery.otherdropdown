@@ -1,6 +1,8 @@
 # jquery.otherdropdown
 A dropdown select box where choosing 'other' prompts the user for an alternate response.
 
+![alt tag](https://raw.github.com/TheBox193/jquery.otherdropdown/master/screenshot.png)
+
 * [Examples / Docs](http://otherdropdown.code.jstassen.com/)
 * [Github](https://github.com/TheBox193/jquery.otherdropdown)
 
