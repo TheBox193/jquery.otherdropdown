@@ -25,5 +25,4 @@ You can pass in options to otherdropdown as an object.
 
 ## Future
 * Add Callbacks hooks
-* Create `min` builds
 * Add tests
