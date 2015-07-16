@@ -7,6 +7,13 @@ A dropdown select box where choosing 'other' prompts the user for an alternate r
 * [Github](https://github.com/TheBox193/jquery.otherdropdown)
 
 ## Install
+
+### NPM
+* Follow the instructions to install [Node](https://nodejs.org/download/) which gives you npm.
+* Switch to project folder and run `npm install jquery.otherdropdown --save`
+* Include `jquery.otherdropdown.js` after jQuery is loaded in your document.
+
+### Bower
 * Follow the instructions to install [Bower](http://bower.io/#install-bower).
 * Switch to project folder and run `bower install jquery.otherdropdown --save`
 * Include `jquery.otherdropdown.js` after jQuery is loaded in your document.
