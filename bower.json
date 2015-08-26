@@ -1,6 +1,6 @@
 {
   "name": "jquery.otherdropdown",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "authors": [
     "TheBox193 <godlvall2jm@gmail.com>"
   ],
@@ -17,6 +17,10 @@
   ],
   "license": "MIT",
   "homepage": "https://github.com/TheBox193/jquery.otherdropdown",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/TheBox193/jquery.otherdropdown.git"
+  },
   "ignore": [
     "**/.*",
     "node_modules",

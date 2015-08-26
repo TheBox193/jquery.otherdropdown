@@ -1,6 +1,6 @@
 {
   "name": "jquery.otherdropdown",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A dropdown select box where choosing 'other' prompts the user for an alternate response.",
   "main": "jquery.otherdropdown.js",
   "scripts": {
@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/TheBox193/jquery.otherdropdown/issues"
   },
-  "homepage": "https://github.com/TheBox193/jquery.otherdropdown#readme",
+  "homepage": "http://otherdropdown.code.jstassen.com",
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-rename": "^1.2.2",
