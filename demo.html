@@ -1,20 +1,33 @@
 <html>
 <head>
-	<script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
-	<script type="text/javascript" src="/src/jquery.otherdropdown.js"></script>
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="src/jquery.otherdropdown.js"></script>
 	<script type="text/javascript">
 		$(function(){
 			// Binding the otherDropdowns listeners to our form
 			$('[name="Test-1"]').otherDropdown();
 			$('[name="Test-2"]').otherDropdown({value:'Something'});
-			$('[name="Test-3"]').otherDropdown({classes:'noborder'});
-			$('[name="Test-4"]').otherDropdown({placeholder:'Type your reason'});
+			$('[name="Test-2"]').otherDropdown({placeholder:'Type your reason'});
+			$('[name="Test-4"]').otherDropdown({classes:'noborder'});
+			$('[name="Test-5"]').otherDropdown({classes:'noborder', value:'Something', placeholder:'How many employees?' });
 		}); 
 	</script>
+	<style type="text/css">
+		.noborder {
+			border: none;
+		}
+	</style>
 </head>
 <body style="display:none">
 <title>jquery.otherdropdown  v1.1.x</title>
-
+<div class="container">
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+	<input type="hidden" name="cmd" value="_s-xclick">
+	<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+	">
+	<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+	</form>
+</div>
 <xmp theme="united" style="display:none;">
 # jquery.otherdropdown
 A dropdown select box where choosing 'other' prompts the user for an alternate response.
@@ -79,9 +92,8 @@ You can pass in options to otherdropdown as an object.
 			</select>
 		</div>
 		<div class="row">
-			<code>$('[name="Test-3"]').otherDropdown({classes:'noborder'});</code>
+			<code>$('[name="Test-3"]').otherDropdown({placeholder:'How many employees?'});</code>
 		</div>
-
 		<div class="row">
 			<select name="Test-3">
 				<option value="">Select One</option>
@@ -90,16 +102,28 @@ You can pass in options to otherdropdown as an object.
 				<option value="Other">Other</option>
 			</select>
 		</div>
-
 		<div class="row">
-			<code>$('[name="Test-4"]').otherDropdown({placeholder:'Type your reason'});</code>
+			<code>$('[name="Test-4"]').otherDropdown({classes:'noborder'});</code>
 		</div>
+
 		<div class="row">
 			<select name="Test-4">
 				<option value="">Select One</option>
 				<option value="No employees">No employees</option>
 				<option value="1-2 employees">1-2 employees</option>
 				<option value="Other">Other</option>
+			</select>
+		</div>
+		<div class="row">
+			<code>$('[name="Test-5"]').otherDropdown({classes:'noborder', value:'Something', placeholder:'How many employees?' });</code>
+		</div>
+
+		<div class="row">
+			<select name="Test-5">
+				<option value="">Select One</option>
+				<option value="No employees">No employees</option>
+				<option value="1-2 employees">1-2 employees</option>
+				<option value="Something">Something Else</option>
 			</select>
 		</div>
 <!-- 	<div class="row">
