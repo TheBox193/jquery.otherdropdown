@@ -5,6 +5,7 @@ A dropdown select box where choosing 'other' prompts the user for an alternate r
 
 * [Examples / Docs](http://otherdropdown.code.jstassen.com/)
 * [Github](https://github.com/TheBox193/jquery.otherdropdown)
+* [NPM Stats](http://npm-stat.com/charts.html?package=jquery.otherdropdown)
 
 ## Install
 
