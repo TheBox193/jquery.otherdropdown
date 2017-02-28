@@ -2,64 +2,80 @@
  * @license
  * @name jquery.otherdropdown
  * @description A small jQuery plugin to support a text area when selecting an 'Other' option in a dropdown
- * @version 1.1.2
+ * @version 1.2.0
  * @author Jonathan Stassen <jstassen.com>
  * @see https://github.com/TheBox193/jquery.otherdropdown
  */
-$.fn.otherDropdown = function(options) {
-	var $this = this;
-	// Allow a different name/value to trigger, default to 'other'
-	var opts = $.extend({}, {value: 'other'}, options);
-	opts.name_lower = opts.value.toLowerCase();
-	opts.name_upper = opts.value.charAt(0).toUpperCase() + opts.value.slice(1);
-	opts.placeholder = opts.placeholder || opts.name_upper;
-
-	// Bind to all change events
-	$this.change( function(ev){
-
-		// Swap in the text area if our 'other' option was chosen
-		if (this.value === opts.name_lower || this.value === opts.name_upper) {
-			$this.hide().after( $textInput );
-			$textInput.focus();
-		}
-	});
-
-	// Prepare our text input
-	var $textInput = $('<input type="text" class="otherdropdown" placeholder="' + opts.placeholder + '" />');
-
-	// Allow custom classes on the text input
-	if (opts.classes) {
-		$textInput.addClass(opts.classes);
+;(function (factory) {
+	if (typeof define === 'function' && define.amd) {
+		// AMD (Register as an anonymous module)
+		define(['jquery'], factory);
+	} else if (typeof exports === 'object') {
+		// Node/CommonJS
+		module.exports = factory(require('jquery'));
+	} else {
+		// Browser globals
+		factory(jQuery);
 	}
+}(function ($) {
+	'use strict';
 
-	// Bind to blur to swap back to select dropdown
-	$textInput.blur( function(ev) {
-		var value = this.value;
-		this.value = '';
-		this.remove();
-		$this.show();
+	$.fn.otherDropdown = function(options) {
+		var $this = this;
+		// Allow a different name/value to trigger, default to 'other'
+		var opts = $.extend({}, {value: 'other'}, options);
+		opts.name_lower = opts.value.toLowerCase();
+		opts.name_upper = opts.value.charAt(0).toUpperCase() + opts.value.slice(1);
+		opts.placeholder = opts.placeholder || opts.name_upper;
 
-		if (value === '' || value === opts.name_lower || value === opts.name_upper) {
-			return;
+		// Bind to all change events
+		$this.change( function(ev){
+
+			// Swap in the text area if our 'other' option was chosen
+			if (this.value === opts.name_lower || this.value === opts.name_upper) {
+				$this.hide().after( $textInput );
+				$textInput.focus();
+			}
+		});
+
+		// Prepare our text input
+		var $textInput = $('<input type="text" class="otherdropdown" placeholder="' + opts.placeholder + '" />');
+
+		// Allow custom classes on the text input
+		if (opts.classes) {
+			$textInput.addClass(opts.classes);
 		}
 
-		// If something was typed, create a new option with that value
-		var $searchedOption = $this.children('[value="' + value + '"]');
+		// Bind to blur to swap back to select dropdown
+		$textInput.blur( function(ev) {
+			var value = this.value;
+			this.value = '';
+			this.remove();
+			$this.show();
 
-		// If value doesn't exist, added it.
-		if ( $searchedOption.length < 1 ) {
-			var $option = $('<option value="' + value + '">' + value + '</option>');
-			$this.append($option);
-		}
+			if (value === '' || value === opts.name_lower || value === opts.name_upper) {
+				return;
+			}
 
-		// Focus the value
-		$this.val( value );
-	});
+			// If something was typed, create a new option with that value
+			var $searchedOption = $this.children('[value="' + value + '"]');
 
-	// TODO
-	// var doCallback = function(name) {
-	// 	if ( opts[name] ) {
-	// 		opts[name]();
-	// 	}
-	// };
-};
+			// If value doesn't exist, added it.
+			if ( $searchedOption.length < 1 ) {
+				var $option = $('<option value="' + value + '">' + value + '</option>');
+				$this.append($option);
+			}
+
+			// Focus the value
+			$this.val( value );
+		});
+
+		// TODO
+		// var doCallback = function(name) {
+		// 	if ( opts[name] ) {
+		// 		opts[name]();
+		// 	}
+		// };
+	};
+
+}));
