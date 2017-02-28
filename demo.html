@@ -7,14 +7,14 @@
 			// Binding the otherDropdowns listeners to our form
 			$('[name="Test-1"]').otherDropdown();
 			$('[name="Test-2"]').otherDropdown({value:'Something'});
-			$('[name="Test-2"]').otherDropdown({placeholder:'Type your reason'});
-			$('[name="Test-4"]').otherDropdown({classes:'noborder'});
-			$('[name="Test-5"]').otherDropdown({classes:'noborder', value:'Something', placeholder:'How many employees?' });
+			$('[name="Test-3"]').otherDropdown({placeholder:'Type of event?'});
+			$('[name="Test-4"]').otherDropdown({classes:'lightgreen-bg'});
+			$('[name="Test-5"]').otherDropdown({classes:'lightgreen-bg', value:'Something', placeholder:'Type of event?' });
 		}); 
 	</script>
 	<style type="text/css">
-		.noborder {
-			border: none;
+		.lightgreen-bg {
+			background-color: lightgreen !important;
 		}
 	</style>
 </head>
@@ -62,7 +62,6 @@ You can pass in options to otherdropdown as an object.
 
 ## Demos
 </xmp>
-
 <div class="container">
 	<form id="demo" name="demo" method="post" format="html">
 		<div class="row">
@@ -75,8 +74,8 @@ You can pass in options to otherdropdown as an object.
 		<div class="row">
 			<select name="Test-1">
 				<option value="">Select One</option>
-				<option value="No employees">No employees</option>
-				<option value="1-2 employees">1-2 employees</option>
+				<option value="Birthday">Birthday</option>
+				<option value="Corporate Event">Corporate Event</option>
 				<option value="Other">Other</option>
 			</select>
 		</div>
@@ -86,44 +85,44 @@ You can pass in options to otherdropdown as an object.
 		<div class="row">
 			<select name="Test-2">
 				<option value="">Select One</option>
-				<option value="No employees">No employees</option>
-				<option value="1-2 employees">1-2 employees</option>
+				<option value="Birthday">Birthday</option>
+				<option value="Corporate Event">Corporate Event</option>
 				<option value="Something">Something Else</option>
 			</select>
 		</div>
 		<div class="row">
-			<code>$('[name="Test-3"]').otherDropdown({placeholder:'How many employees?'});</code>
+			<code>$('[name="Test-3"]').otherDropdown({placeholder:'Type of event?'});</code>
 		</div>
 		<div class="row">
 			<select name="Test-3">
 				<option value="">Select One</option>
-				<option value="No employees">No employees</option>
-				<option value="1-2 employees">1-2 employees</option>
+				<option value="Birthday">Birthday</option>
+				<option value="Corporate Event">Corporate Event</option>
 				<option value="Other">Other</option>
 			</select>
 		</div>
 		<div class="row">
-			<code>$('[name="Test-4"]').otherDropdown({classes:'noborder'});</code>
+			<code>$('[name="Test-4"]').otherDropdown({classes:'lightgreen-bg'});</code>
 		</div>
 
 		<div class="row">
 			<select name="Test-4">
 				<option value="">Select One</option>
-				<option value="No employees">No employees</option>
-				<option value="1-2 employees">1-2 employees</option>
+				<option value="Birthday">Birthday</option>
+				<option value="Corporate Event">Corporate Event</option>
 				<option value="Other">Other</option>
 			</select>
 		</div>
 		<div class="row">
-			<code>$('[name="Test-5"]').otherDropdown({classes:'noborder', value:'Something', placeholder:'How many employees?' });</code>
+			<code>$('[name="Test-5"]').otherDropdown({classes:'lightgreen-bg', value:'Something', placeholder:'Type of event?' })</code>
 		</div>
 
 		<div class="row">
 			<select name="Test-5">
 				<option value="">Select One</option>
-				<option value="No employees">No employees</option>
-				<option value="1-2 employees">1-2 employees</option>
-				<option value="Something">Something Else</option>
+				<option value="Birthday">Birthday</option>
+				<option value="Corporate Event">Corporate Event</option>
+				<option value="Something">Something</option>
 			</select>
 		</div>
 <!-- 	<div class="row">
