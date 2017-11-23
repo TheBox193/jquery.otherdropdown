@@ -1,6 +1,6 @@
 {
   "name": "jquery.otherdropdown",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "authors": [
     "TheBox193 <godlvall2jm@gmail.com>"
   ],
@@ -27,8 +27,5 @@
     "bower_components",
     "test",
     "tests"
-  ],
-  "dependencies": {
-    "jquery": "~2.1.4"
-  }
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "name": "jquery.otherdropdown",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A dropdown select box where choosing 'other' prompts the user for an alternate response.",
   "main": "src/jquery.otherdropdown.js",
   "scripts": {
