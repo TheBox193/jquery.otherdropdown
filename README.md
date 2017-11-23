@@ -11,13 +11,18 @@ A dropdown select box where choosing 'other' prompts the user for an alternate r
 
 ### NPM
 * Follow the instructions to install [Node](https://nodejs.org/download/) which gives you npm.
-* Switch to project folder and run `npm install jquery.otherdropdown --save`
+* Switch to project folder and run `yarn add jquery.otherdropdown` or `npm install jquery.otherdropdown --save`
 * Include `jquery.otherdropdown.js` after jQuery is loaded in your document.
 
 ### Bower
 * Follow the instructions to install [Bower](http://bower.io/#install-bower).
 * Switch to project folder and run `bower install jquery.otherdropdown --save`
 * Include `jquery.otherdropdown.js` after jQuery is loaded in your document.
+
+### Add to project
+* `import 'jquery.otherdropdown';`
+or
+* `<script type="text/javascript" src="./path/to/jquery.otherdropdown.min.js"></script>` after the jQuery script tag
 
 ## Usage
 * Bind jquery.otherdropdown to an html select, optionally pass an `options` object
