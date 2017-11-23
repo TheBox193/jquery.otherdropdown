@@ -19,7 +19,6 @@
 	}
 }(function ($) {
 	'use strict';
-
 	$.fn.otherDropdown = function(options) {
 		var $this = this;
 		// Allow a different name/value to trigger, default to 'other'
