@@ -19,18 +19,20 @@
 	}
 }(function ($) {
 	'use strict';
-	$.fn.otherDropdown = function(options) {
+	$.fn.otherDropdown = function(opts) {
 		var $this = this;
 		// Allow a different name/value to trigger, default to 'other'
-		var opts = $.extend({}, {value: 'other', placeholder: options.value || 'Other'}, options);
-		opts.name_lower = opts.value.toLowerCase();
+		var options = opts || {};
+		options.placeholder = options.placeholder || options.value || 'Other';
+		options.value = options.value || 'other';
+		options.name_lower = options.value.toLowerCase();
 
 		// Prepare text input
-		var $textInput = $('<input type="text" class="otherdropdown '+opts.classes+'" placeholder="' + opts.placeholder + '" />');
+		var $textInput = $('<input type="text" class="otherdropdown '+options.classes+'" placeholder="' + options.placeholder + '" />');
 
 		// Bind to all change events to swap in the text area if 'other' option was chosen
 		$this.change( function(ev){
-			if (this.value.toLowerCase() === opts.name_lower) {
+			if (this.value.toLowerCase() === options.name_lower) {
 				$this.hide().after( $textInput );
 				$textInput.focus();
 			}
@@ -43,7 +45,7 @@
 			this.remove();
 			$this.show();
 
-			if (value === '' || this.value.toLowerCase() === opts.name_lower) {
+			if (value === '' || this.value.toLowerCase() === options.name_lower) {
 				return;
 			}
 
@@ -62,8 +64,8 @@
 
 		// TODO
 		// var doCallback = function(name) {
-		// 	if ( opts[name] ) {
-		// 		opts[name]();
+		// 	if ( options[name] ) {
+		// 		options[name]();
 		// 	}
 		// };
 	};
