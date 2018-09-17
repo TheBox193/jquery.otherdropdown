@@ -39,3 +39,8 @@ You can pass in options to otherdropdown as an object.
 ## Future
 * Add Callbacks hooks
 * Add tests
+
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/TheBox193/jquery.otherdropdown/badge.svg?style=beer-square)](https://beerpay.io/TheBox193/jquery.otherdropdown)  [![Beerpay](https://beerpay.io/TheBox193/jquery.otherdropdown/make-wish.svg?style=flat-square)](https://beerpay.io/TheBox193/jquery.otherdropdown?focus=wish)
